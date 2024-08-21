@@ -56,7 +56,7 @@ hr {
     outline: none;
 }
 
-/* .dropbtn {
+.dropbtn {
     background: linear-gradient(to right, red, blue);
     background-clip: text;
     border: none;
@@ -116,7 +116,7 @@ hr {
     position: absolute;
     top: 88px;
     left: -2px;
-} */
+}
 
 @media (max-width: 600px) {
     button {
