@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #e2e2e2, #ffffff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+h1 {
+    background: linear-gradient(to right, red, blue);
+    background-clip: text;
+    margin: 0px 0;
+    font-size: 48px;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+a {
+    color: transparent;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #ddd;
+    width: 60%;
+    margin: 20px auto;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+img {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background-color: #6200ea;
+    border: none;
+    color: white;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover,
+button:focus {
+    background-color: #3700b3;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    button {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    hr {
+        width: 80%;
+    }
+}
+
+/* body {
+    background-color: #faf8ef;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    background-color: lightblue;
+    padding: 30px;
+    font-size: 50px;
+}
+
+hr {
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+div {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+button {
+    color: black;
+    font-size: 50px;
+    border: none;
+    padding: 20px 80px;
+    align-items: center;
+    display: inline-block;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: lightblue;
+    color: white;
+} */

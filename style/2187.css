@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #e2e2e2, #ffffff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+h1 {
+    background: linear-gradient(to right, red, blue);
+    background-clip: text;
+    margin: 0px 0;
+    font-size: 48px;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+a {
+    color: transparent;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #555;
+}
+
+#board {
+    width: 460px;
+    height: 460px;
+    background: linear-gradient(to right, #c0bcb7, #c0ac94);
+
+    background-color: #cdc1b5;
+    border: solid 4px #bbada0;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+        -10px -10px 10px #e2e2e2;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 95px;
+    height: 95px;
+    display: inline-block;
+    margin: 10px;
+    background-color: #cdc1b4;
+    color: #776e65;
+    font-size: 30px;
+    line-height: 95px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    user-select: none;
+}
+
+.x3 {
+    background-color: #eee4da;
+    color: #776e65;
+}
+
+.x9 {
+    background-color: #ede0c8;
+    color: #776e65;
+}
+
+.x27 {
+    background-color: #f2b179;
+    color: #f9f6f2;
+}
+
+.x81 {
+    background-color: #f59563;
+    color: #f9f6f2;
+}
+
+.x243 {
+    background-color: #f67c5f;
+    color: #f9f6f2;
+}
+
+.x729 {
+    background-color: #f65e3b;
+    color: #f9f6f2;
+}
+
+.x2187 {
+    background-color: #edcf72;
+    color: #f9f6f2;
+}
+
+.x6561 {
+    background-color: #edcc61;
+    color: #f9f6f2;
+}
+
+.x19683 {
+    background-color: #edc850;
+    color: #f9f6f2;
+}
+
+.x59049 {
+    background-color: #3c3a32;
+    color: #f9f6f2;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
