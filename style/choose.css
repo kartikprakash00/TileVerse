@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #e2e2e2, #ffffff);
+    background: url(../img/bgimg.jpg) no-repeat;
+    background-size: cover;
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,11 +14,95 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 100vh;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    /* border: 2px solid rgba(255, 255, 255, .5); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2em;
+    color: rgb(1, 4, 185);
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #4695DD;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #4695DD, rgb(1, 4, 185), #4695DD);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .login-btn {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #4695DD;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #4695DD;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .login-btn:hover,
+.navigation .login-btn:focus {
+    /* background-color: white;
+    color: black;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    outline: none; */
+    background: linear-gradient(to right, #4695DD, rgb(1, 4, 185), #4695DD);
+    color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    outline: none;
+}
+
+
 h1 {
-    background: linear-gradient(to right, red, blue);
+    background: linear-gradient(to right, #4695DD, rgb(1, 4, 185), #4695DD);
     background-clip: text;
     margin: 0px 0;
     font-size: 48px;
@@ -43,33 +132,37 @@ div {
 
 img {
     height: 500px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
 }
 
 button {
-    background-color: #6200ea;
-    border: none;
-    color: white;
-    padding: 0px 0px;
+    background: transparent;
+    border: 2px solid #4695DD;
+    color: #4695DD;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover,
 button:focus {
-    background-color: #3700b3;
+    background: linear-gradient(to right, #4695DD, rgb(1, 4, 185), #4695DD);
+    color: white;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
     outline: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     button {
         padding: 12px 24px;
         font-size: 18px;
@@ -81,6 +174,10 @@ button:focus {
 
     hr {
         width: 80%;
+    }
+
+    div img {
+        height: 0;
     }
 }
 
