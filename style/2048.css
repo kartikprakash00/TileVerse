@@ -12,6 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 }
 
 header {
@@ -183,8 +185,8 @@ h2 {
 }
 
 .x64 {
-    /* background-color: #f65e3b; */ 
-    background-color: #4695DD;   
+    /* background-color: #f65e3b; */
+    background-color: #4695DD;
     color: #f9f6f2;
 }
 
