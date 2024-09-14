@@ -134,7 +134,7 @@ div {
 
 img {
     height: 500px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
 }
