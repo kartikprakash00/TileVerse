@@ -20,3 +20,7 @@ window.onclick = function (event) {
         }
     }
 }
+
+function reload() {
+    window.location.reload();
+}

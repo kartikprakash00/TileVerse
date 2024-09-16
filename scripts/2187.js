@@ -122,7 +122,8 @@ function updateTile(tile, num) {
 function gameOver() {
     if (!canMove()) {
         document.removeEventListener("keyup", keys);
-        alert("Game Over!!!");
+        document.getElementById("gameOverOverlay").style.display = "flex";
+        document.getElementById("overlay-score").innerText = score;
     }
 }
 function keys(e) {
@@ -228,4 +229,13 @@ function slideDown() {
             updateTile(tile, num);
         }
     }
+}
+
+function restart() {
+    document.getElementById("gameOverOverlay").style.display = "none";
+    window.location.reload();
+}
+
+function mainMenu() {
+    window.location.href = '../public/index.html';
 }

@@ -17,7 +17,7 @@
         <nav class="navigation">
             <a href="#">How to Play</a>
             <a href="#">Leaderboard</a>
-            <button class="login-btn" onclick="login()">Login</button>
+            <button class="login-btn" onclick="restart()">Restart</button>
         </nav>
     </header>
 
@@ -29,6 +29,15 @@
     <hr>
     <h2>Score: <span id="score">0</span></h2>
     <div id="board">
+    </div>
+
+    <div id="gameOverOverlay" class="overlay">
+        <div class="overlay-content">
+            <h1>Game Over!</h1>
+            <h2>Score: <span id="overlay-score">0</span></h2>
+            <button onclick="restart()">Restart</button>
+            <button onclick="mainMenu()">Main Menu</button>
+        </div>
     </div>
 </body>
 

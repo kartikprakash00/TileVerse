@@ -41,7 +41,9 @@ header a {
 
 .logo {
     font-size: 2em;
-    color: rgb(1, 4, 185);
+    background: linear-gradient(to right, #0285ff, rgb(1, 4, 185), #0084ff);
+    background-clip: text;
+    color: transparent;
     user-select: none;
 }
 
@@ -121,7 +123,7 @@ a {
 
 hr {
     border: none;
-    border-top: 3px solid #ddd;
+    border-top: 3px solid #92b7da;
     width: 60%;
     margin: 20px auto;
 }

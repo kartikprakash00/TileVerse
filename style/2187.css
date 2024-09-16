@@ -39,7 +39,9 @@ header a {
 
 .logo {
     font-size: 2em;
-    color: rgb(1, 4, 185);
+    background: linear-gradient(to right, #0285ff, rgb(1, 4, 185), #0084ff);
+    background-clip: text;
+    color: transparent;
     user-select: none;
 }
 
@@ -119,8 +121,10 @@ a {
 }
 
 h2 {
+    background: linear-gradient(to right, #4695DD, rgb(1, 4, 185), #4695DD);
+    background-clip: text;
     font-size: 24px;
-    color: #555;
+    color: transparent;
 }
 
 #board {
@@ -203,6 +207,66 @@ h2 {
 .x59049 {
     background-color: #0b2563;
     color: #f9f6f2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.overlay-content {
+    border: 8px ridge #4695DD;
+    padding: 150px 75px;
+    text-align: center;
+    background-color: #ffffff93;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.overlay-content h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.overlay-content h2 {
+    background: linear-gradient(to right, #4695DD, #0104b9, #4695DD);
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.overlay-content button {
+    width: 46.9%;
+    height: 50px;
+    margin: 5px;
+    background: transparent;
+    border: 2px solid #4695DD;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #4695DD;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.overlay-content button:hover,
+.overlay-content button:focus {
+    background: linear-gradient(to right, #4695DD, rgb(1, 4, 185), #4695DD);
+    color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    outline: none;
 }
 
 hr {
