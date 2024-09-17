@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     /* background: linear-gradient(to right, #e2e2e2, #ffffff); */
     background: url(../img/bgimg.jpg) no-repeat;
@@ -84,6 +84,7 @@ header a {
     font-weight: 500;
     margin-left: 40px;
     transition: .5s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .navigation .login-btn:hover,

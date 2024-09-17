@@ -24,3 +24,7 @@ window.onclick = function (event) {
 function reload() {
     window.location.reload();
 }
+
+function login() {
+    window.location.href = '../public/login.html';
+}
