@@ -15,7 +15,7 @@
             <h2 class="logo">TileVerse</h2>
         </a>
         <nav class="navigation">
-            <a href="#">How to Play</a>
+            <a onclick="showOverlay()">How to Play</a>
             <a href="#">Leaderboard</a>
             <button class="login-btn" onclick="restart()">Restart</button>
         </nav>
@@ -39,6 +39,26 @@
             <button onclick="mainMenu()">Main Menu</button>
         </div>
     </div>
+
+    <div id="instructionOverlay" class="instruction-Overlay">
+        <div class="instruction-content">
+            <h1>TileVerse</h1>
+            <h2>How to Play!</h2>
+            <ol class="instruction">
+                <li>Use your arrow keys <kbd><ion-icon name="caret-up"></ion-icon></kbd> or <kbd><ion-icon
+                            name="caret-down"></ion-icon></kbd> to move the tiles up or down and <kbd><ion-icon
+                            name="caret-back"></ion-icon></kbd> or <kbd><ion-icon name="caret-forward"></ion-icon></kbd>
+                    to move the tiles left or right.</li>
+                <li>When two tiles with the same number touch, they merge into one.</li>
+                <li>After merging each tile, you gain points and your score will increase.</li>
+                <li>The more tiles you merge, the higher your score will get.</li>
+            </ol>
+            <button onclick="closeOverlay()">Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

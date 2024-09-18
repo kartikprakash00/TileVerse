@@ -49,6 +49,7 @@ header a {
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .navigation a::after {
@@ -225,4 +226,91 @@ form button:focus {
 
 .register p a:hover {
     text-decoration: underline;
+}
+
+.instruction-Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.instruction-content {
+    border: 8px ridge #4695DD;
+    padding: 40px 20px;
+    width: 71vh;
+    text-align: center;
+    background-color: #ffffff93;
+    backdrop-filter: blur(10px);
+}
+
+.instruction-content h1 {
+    background: linear-gradient(to right, #4695DD, #0104b9, #4695DD);
+    background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.instruction-content h2 {
+    background: linear-gradient(to right, #4695DD, #0104b9, #4695DD);
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.instruction-content button {
+    width: 46.9%;
+    height: 50px;
+    margin: 5px;
+    background: transparent;
+    border: 2px solid #4695DD;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #4695DD;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.instruction-content button:hover,
+.instruction-content button:focus {
+    background: linear-gradient(to right, #4695DD, rgb(1, 4, 185), #4695DD);
+    color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    outline: none;
+}
+
+.instruction {
+    text-align: start;
+    margin-bottom: 50px;
+    color: #4695DD;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.instruction li {
+    margin-bottom: 15px;
+}
+
+kbd {
+    font-family: monospace;
+}
+
+.icon-overlay {
+    background-color: #4695DD;
+    color: white;
+    border: 1px solid #4695DD;
+    border-radius: 2px;
+    text-align: center;
+    outline: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
